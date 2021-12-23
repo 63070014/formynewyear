@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Sarabun:wght@700&display=swap');
+
+        @font-face {
+            font-family: rasputin;
+            src: url(./font/Rasputin.otf);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: hsl(0, 100%, 100%, .9);
+            font-family: 'Bai Jamjuree', sans-serif;
+            scroll-behavior: smooth;
+            
+        }
+        .header{
+            background-image: url(./img/circle-bg.svg);
+            background-repeat: no-repeat;
+            background-size:108%;
+            background-position: bottom;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+        
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            min-width: 130px;
+            padding: 10px 10px;
+            z-index: 1;
+          }
+          
+          .drop-hover:hover {
+            border-bottom: 1px solid #D76461;
+            transition: all .5s;
+        }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+        .navbar>p,
+        .express-header {
+            font-family: rasputin;
+        }
+
+        body,.navbar {
+            background-color: #2D2D2D;
+        }
+        .navbar{
+            transition: all .5s;
+            z-index: 1;
+        }
+        .text-box-js{
+            transform: translate(10rem);
+        }
+        .zigzag{
+            background-image: url(./img/zigzag.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #head-express{
+            opacity: 0;
+        }
+        .navbar,
+        .header,
+        .topic-content,
+        .head-topic,
+        .topic-01,
+        .space-front,
+        .what-express,
+        .merit-caption {
+            border-left: 1px solid hsl(0, 100%, 100%, .9);
+            border-right: 1px solid hsl(0, 100%, 100%, .9);
+            border-bottom: 1px solid hsl(0, 100%, 100%, .9);
+        }
+
+        .detail-li>p,
+        .property>li {
+            line-height: 2rem;
+            font-size: 1.1rem;
+        }
+        .box-js {
+            background-color: #eedf7b;
+        }
+        .box-grey{
+            border-radius: 10px 10px 0px 0px;
+            background-color: #D76461;
+        }
+        .box-white{
+            border-radius: 0px 0px 10px 10px;
+            background-color: hsl(0, 100%, 100%, .9);
+        }
+        .circle{
+            background-color: #eedf7b;
+            border-radius: 100%;
+        }
+        .span-html{
+            color: #D76461;
+        }
+        .black{
+            color: #2D2D2D;
+        }
+        .green{
+            color:#690;
+        }
+        .grey{
+            color: grey;
+        }
+        .blue{
+            color: #07a;
+        }
+        .brown{
+            color: #9a6e3a;
+        }
+        .yellow{
+            color: #eedf7b;
+        }
+        .container-copyright{
+            /* width: 74rem; */
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .detail-copy{
+            font-size: .9rem;
+            font-family: rasputin;
+            color: hsl(0, 100%, 100%, .8);
+        }
+        .arrow-final{
+            width: 1.5rem;
+            height: 8rem;
+            transform: rotate(-90deg)  translate(0px,3.2rem);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .reveal{
+            opacity: 0;
+            transition-duration: 1.5s !important;
+        }
+        .active{
+            opacity: 1 !important;
+            transform: translate(0px,0px) !important;
+        }
+        li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .sticky{
+            font-size: 18rem;
+            top:4rem;
+            line-height: 20rem;
+            transition: all .5s;
+        }
+        li::before {
+            content: "\2022";
+            color: #D76461;
+            font-size: 2rem;
+            font-weight:bolder;
+            display: inline-block; 
+            width: .7em;
+          }
+          @media only screen and (max-width: 1100px) {
+            .sticky{
+                font-size: 13rem;
+                line-height: 14rem;
+            }
+          }
+          @media only screen and (max-width: 1300px) {
+            .header{
+                background-size: contain;
+                background-position: center;
+            }
+          }
+          
